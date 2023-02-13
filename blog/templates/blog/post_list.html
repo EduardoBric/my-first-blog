@@ -4,9 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="../plantillas/style.css"> -->
     <title>Starbell</title>
 </head>
 <body>
-    <p>Hola, aquí chambeamos</p>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="" srcset="">
+            </div>
+                <ul class="navItems">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <div class="links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+        </nav>
+
+        <div class="wrapper">
+            <div class="cols cols0">
+                <span class="topline">Bienvenida</span>
+                <h1>Eres <span class="multitext"></span></h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo accusamus ipsa ipsam voluptas. </p>
+                <div class="btns">
+                    <button>Picale</button>
+                    <button>Otra vez</button>
+                </div>
+            </div>
+            <div class="cols cols1">
+                <div class="imgbox">
+                    <img src="splash.png" id="splash">
+                    <img src="vi.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect = new Typed(".multitext",{
+            strings : ["Bella", "Unica", "Starbell"],
+            loop:true,
+            typeSpeed:100,
+            backSpeed:80,
+            backDelay:1500
+        })
+    </script>
 </body>
 </html>
